@@ -4,19 +4,19 @@ abbrev: "SCION DI"
 category: info
 submissiontype: IRTF
 
-docname: draft-meynell-scion-deployment-latest
+docname: draft-meynell-panrg-scion-deployment-latest
 
 v: 3
-area: "IRTF"
-workgroup: "Path Aware Networking RG"
+area: IRTF
+workgroup: PANRG
 keyword: Internet-Draft
 venue:
-  group: "Path Aware Networking RG"
-  type: "Research Group"
-  mail: "panrg@irtf.org"
-  arch: "https://www.ietf.org/mail-archive/web/panrg/"
-  github: "scionassociation/scion-deployment_I-D"
-  latest: "https://scionassociation.github.io/scion-deployment_I-D/draft-meynell-scion-deployment.html"
+  group: WG
+  type: Working Group
+  mail: panrg@irtf.org
+  arch: https://datatracker.ietf.org/rg/panrg
+  github: scionassociation/scion-deployment_I-D
+  latest: https://scionassociation.github.io/scion-deployment_I-D/draft-meynell-panrg-scion-deployment.html
 
 author:
  -   ins: K. Meynell
