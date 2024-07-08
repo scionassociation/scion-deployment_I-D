@@ -1,0 +1,3 @@
+# Automatically generated CODEOWNERS
+# Regenerate with `make update-codeowners`
+draft-meynell-scion-deployment.md kme@scion.org nic@scion.org
