@@ -6,14 +6,14 @@ category: info
 docname: draft-meynell-scion-deployment-latest
 submissiontype: independent
 v: 3
-area: "IRTF"
-workgroup: "Path Aware Networking RG"
+# area: "IRTF"
+# workgroup: "Path Aware Networking RG"
 keyword: Internet-Draft
 venue:
-  group: "Path Aware Networking RG"
-  type: "Research Group"
-  mail: "panrg@irtf.org"
-  arch: "https://www.ietf.org/mail-archive/web/panrg/"
+#  group: "Path Aware Networking RG"
+#  type: "Research Group"
+#  mail: "panrg@irtf.org"
+#  arch: "https://www.ietf.org/mail-archive/web/panrg/"
   github: "scionassociation/scion-deployment_I-D"
   latest: "https://scionassociation.github.io/scion-deployment_I-D/draft-meynell-scion-deployment.html"
 
