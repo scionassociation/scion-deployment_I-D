@@ -111,7 +111,7 @@ The goal of this draft is two-fold: it tries to document lessons learned in depl
 
 ## SCION-IP Gateway
 
-Introduction to IP in SCION tunneling for ecosystems. See S. Hitz IETF118 presentation - https://datatracker.ietf.org/meeting/118/materials/slides-118-panrg-operational-aspects-of-scion-00
+Introduction to IP in SCION tunneling for ecosystems. See S. Hitz IETF118 presentation: https://datatracker.ietf.org/meeting/118/materials/slides-118-panrg-operational-aspects-of-scion-00
 
 ## SCION-enabled Applications/Native SCION Endpoint
 
