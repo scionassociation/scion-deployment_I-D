@@ -143,7 +143,7 @@ Table of Contents
 3.2.  SCION-IP Gateway
 
    Introduction to IP in SCION tunneling for ecosystems.  See S.  Hitz
-   IETF118 presentation -
+   IETF118 presentation:
    https://datatracker.ietf.org/meeting/118/materials/slides-118-panrg-
    operational-aspects-of-scion-00
 
