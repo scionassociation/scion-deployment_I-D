@@ -2,7 +2,7 @@
 
 
 
-Network Working Group                                         K. Meynell
+Path Aware Networking RG                                      K. Meynell
 Internet-Draft                                             N. Rustignoli
 Intended status: Informational                         SCION Association
 Expires: 9 January 2025                                      8 July 2024
@@ -24,6 +24,11 @@ About This Document
    meynell-scion-deployment.html.  Status information for this document
    may be found at https://datatracker.ietf.org/doc/draft-meynell-scion-
    deployment/.
+
+   Discussion of this document takes place on the Path Aware Networking
+   RG Research Group mailing list (mailto:panrg@irtf.org), which is
+   archived at https://www.ietf.org/mail-archive/web/panrg/.  Subscribe
+   at https://www.ietf.org/mailman/listinfo/panrg/.
 
    Source for this draft and an issue tracker can be found at
    https://github.com/scionassociation/scion-deployment_I-D.
@@ -127,6 +132,21 @@ Table of Contents
    This document has no IANA actions.
 
 13.  Normative References
+
+   [I-D.scion-cp]
+              de Kater, C., Rustignoli, N., and S. Hitz, "SCION Control
+              Plane", 2023, <https://datatracker.ietf.org/doc/draft-
+              dekater-scion-controlplane/>.
+
+   [I-D.scion-cppki]
+              de Kater, C., Rustignoli, N., and S. Hitz, "SCION Control-
+              Plane PKI", 2023, <https://datatracker.ietf.org/doc/draft-
+              dekater-scion-pki/>.
+
+   [I-D.scion-dataplane]
+              de Kater, C., Rustignoli, N., and S. Hitz, "SCION Data
+              Plane", 2023, <https://datatracker.ietf.org/doc/draft-
+              dekater-scion-dataplane/>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
