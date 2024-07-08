@@ -30,6 +30,7 @@ author:
      email: nic@scion.org
 
 normative:
+  RFC9217:
   I-D.scion-cp:
     title: SCION Control Plane
     date: 2023
@@ -93,9 +94,12 @@ TODO Abstract here
 
 # Introduction
 
-* Problem statement.
-* Refer to the PKI, Control Plane and Data Plane Internet Drafts here.
-* Mention we try to answer 2.7 - Operating a Path-Aware Network, and 2.8 - Deploying a Path-Aware Network of rfc9217.
+The goal of this draft is two-fold: it tries to document lessons learned in deploying SCION to some if its productive early adopters, and it tries to tries to answer questions 2.7 - Operating a Path-Aware Network, and 2.8 - Deploying a Path-Aware Network posed in {{RFC9217}}.
+
+**Note:** This is the very first version of the SCION deployment draft, and it merely contains a skeleton of potential topics to be further discussed in this draft. Any feedback is welcome and much appreciated. Thanks!
+
+* This draft assumes the reader is familiar with the overall core SCION specification, outlined in {{I-D.scion-dataplane}}, {{I-D.scion-cppki}}, {{I-D.scion-cp}}.
+
 
 # Conventions and Definitions
 
@@ -104,13 +108,21 @@ TODO Abstract here
 # Deployment Models
 
 ## SCION Network - How to roll it out.
-## SCION-IP Gateway & IP in SCION tunneling for ecosystems (see Anapaya IETF118 presentation)
-## SCION-enabled Applications
-## Implications for the transport layer (section 2.5 of rfc9217)
+
+## SCION-IP Gateway
+
+Introduction to IP in SCION tunneling for ecosystems. See S. Hitz IETF118 presentation - https://datatracker.ietf.org/meeting/118/materials/slides-118-panrg-operational-aspects-of-scion-00
+
+## SCION-enabled Applications/Native SCION Endpoint
+
+## Implications for the transport layer
+
+Address section 2.5 of {{RFC9217}}.
+
 
 # Establishing and running an Isolation Domain
 
-**(see SIX presentation IETF118 - https://datatracker.ietf.org/meeting/118/materials/slides-118-panrg-scion-deployment-experience-the-secure-swiss-finance-network-ssfn)**
+See F. Steinmann presentation IETF118 - https://datatracker.ietf.org/meeting/118/materials/slides-118-panrg-scion-deployment-experience-the-secure-swiss-finance-network-ssfn
 
 ## Description and use case
 
@@ -118,9 +130,11 @@ TODO Abstract here
 
 ## Core Members - TRC signers
 
-## Issuing Members - issuers of AS certifications (may be the same as Core Members)
+## Issuing Members - issuers of AS certifications
 
-## Non-Core Members (is this the correct term - should we define a better term?)
+(may be the same as Core Members)
+
+## Non-Core Members
 
 ## Coordination
 
@@ -140,54 +154,60 @@ TODO Abstract here
 * Maintaining cryptographic material
 * Certificate issuance
 
-## Security Incident Handling - this could go into the Security section
 
 
 # Establishing and running a SCION network
 
 ## Prerequisites - e.g. AS number, running existing intra-domain protocol if applicable
+
 ## How to join an ISD
-## Obtaining an SCION AS number and AS certificate
+
+## Obtaining a SCION AS number and AS certificate
+
 ## Setting up the Control Services (Beacon, Path and Certificate servers)
-## Availability & scalability
+
+Also cover Availability & scalability of such services.
+
 ## Setting up SCION border routers
-## Customer site deployment (native, SCION-IP gateway, SCION-enabled application)
-## Configuring path (segment) attributes/parameters (and how do customers select paths) - this could be a separate section
+
+
+## Configuring path (segment) attributes/parameters
+
+How do customers select paths?
+
 ## SCION & Network Address Translation
+
 ## Software Change Management
 
-# Adding and removing networks from an Isolation Doman
+# Adding and removing networks from an Isolation Domain
 
 ## Adding a new Core network
+
 ## Removing an existing Core network
+
 ## Changes between existing Core networks
+
 ## Adding a new non-Core network
+
 ## Removing an existing non-Core network
+
 ## Changes between Core network and non-core network
 
 # Connecting to other Isolation Domains
 
-**There doesn't seem to be much/any documentation on what needs to be done to set-up inter-ISD communication, or how AS ‘peering’ works across different ISDs.**
+## Inter-ISD Governance
 
 * Inter-ISD Governance (is this applicable?)
 * Inter-ISD Policy Development & Maintenance
 * Inter-ISD Path selection
 
-# SCION-IP Gateway Deployment
-
-**Is this section needed for this Internet Draft? Could it go in the ‘Adding and removing networks from an Isolation Domain’ section?**
-
-# End Host Deployment
-
-**Is this section needed for this Internet Draft? Could it go in the ‘Adding and removing networks from an Isolation Domain’ section?**
 
 # Performance Monitoring
 
-**This is outlined in the 'Best Practices for SCION ISD Operations but is this strictly needed for an Internet Draft? Most/all networks should be monitored as a matter of good operational practice, and unless SCION networks need to meet stated parameters, is this section actually required?**
 
 # Security Considerations
 
-TODO Security
+## Security Incident Handling
 
 
 # IANA Considerations
