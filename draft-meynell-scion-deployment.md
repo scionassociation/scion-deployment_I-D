@@ -152,7 +152,7 @@ TODO Abstract here
 ## Availability & scalability
 ## Setting up SCION border routers
 ## Customer site deployment (native, SCION-IP gateway, SCION-enabled application)
-## Configuring path (segment) attributes/parameters (and how do customers select paths) - this could be a separate section 
+## Configuring path (segment) attributes/parameters (and how do customers select paths) - this could be a separate section
 ## SCION & Network Address Translation
 ## Software Change Management
 
@@ -171,7 +171,7 @@ TODO Abstract here
 
 * Inter-ISD Governance (is this applicable?)
 * Inter-ISD Policy Development & Maintenance
-* Inter-ISD Path selection 
+* Inter-ISD Path selection
 
 # SCION-IP Gateway Deployment
 
