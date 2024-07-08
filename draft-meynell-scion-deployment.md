@@ -3,7 +3,7 @@ title: "SCION Deployment Issues"
 abbrev: "SCION DI"
 category: info
 
-docname: draft-meynell-scion-deployment
+docname: draft-meynell-scion-deployment-latest
 submissiontype: independent
 v: 3
 area: "IRTF"
