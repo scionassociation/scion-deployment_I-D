@@ -1,0 +1,270 @@
+
+
+
+
+Path Aware Networking RG                                      K. Meynell
+Internet-Draft                                             N. Rustignoli
+Intended status: Informational                         SCION Association
+Expires: 9 January 2025                                      8 July 2024
+
+
+                        SCION Deployment Issues
+                 draft-meynell-scion-deployment-latest
+
+Abstract
+
+   TODO Abstract here
+
+About This Document
+
+   This note is to be removed before publishing as an RFC.
+
+   The latest revision of this draft can be found at
+   https://scionassociation.github.io/scion-deployment_I-D/draft-
+   meynell-scion-deployment.html.  Status information for this document
+   may be found at https://datatracker.ietf.org/doc/draft-meynell-scion-
+   deployment/.
+
+   Discussion of this document takes place on the Path Aware Networking
+   RG Research Group mailing list (mailto:panrg@irtf.org), which is
+   archived at https://www.ietf.org/mail-archive/web/panrg/.  Subscribe
+   at https://www.ietf.org/mailman/listinfo/panrg/.
+
+   Source for this draft and an issue tracker can be found at
+   https://github.com/scionassociation/scion-deployment_I-D.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 9 January 2025.
+
+Copyright Notice
+
+   Copyright (c) 2024 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Conventions and Definitions
+   3.  Deployment Models
+     3.1.  SCION Network - How to roll it out.
+   4.  Establishing and running an Isolation Domain
+     4.1.  Description and use case
+     4.2.  Governance
+     4.3.  Core Members - TRC signers
+     4.4.  Issuing Members - issuers of AS certifications (may be the
+            same as Core Members)
+     4.5.  Non-Core Members (is this the correct term - should we
+            define a better term?)
+     4.6.  Coordination
+     4.7.  Required contact information
+     4.8.  Methods of Communication and Authentication requirements
+     4.9.  ISD Policy Development & Maintenance
+     4.10. Assignment and registration of ISD numbers
+     4.11. Assignment and registration of SCION AS numbers
+     4.12. Trust Root Configuration
+     4.13. Security Incident Handling - this could go into the
+            Security section
+   5.  Establishing and running a SCION network
+     5.1.  Prerequisites - e.g.  AS number, running existing
+           intra-domain protocol if applicable
+   6.  Adding and removing networks from an Isolation Doman
+     6.1.  Adding a new Core network
+   7.  Connecting to other Isolation Domains
+   8.  SCION-IP Gateway Deployment
+   9.  End Host Deployment
+   10. Performance Monitoring
+   11. Security Considerations
+   12. IANA Considerations
+   13. Normative References
+   Acknowledgments
+   Authors' Addresses
+
+1.  Introduction
+
+   *  Problem statement.
+
+   *  Refer to the PKI, Control Plane and Data Plane Internet Drafts
+      here.
+
+   *  Mention we try to answer 2.7 - Operating a Path-Aware Network, and
+      2.8 - Deploying a Path-Aware Network of rfc9217.
+
+2.  Conventions and Definitions
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
+   "OPTIONAL" in this document are to be interpreted as described in
+   BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
+   capitals, as shown here.
+
+3.  Deployment Models
+
+3.1.  SCION Network - How to roll it out.
+
+   ## SCION-IP Gateway & IP in SCION tunneling for ecosystems (see
+   Anapaya IETF118 presentation) ## SCION-enabled Applications ##
+   Implications for the transport layer (section 2.5 of rfc9217)
+
+4.  Establishing and running an Isolation Domain
+
+   *(see SIX presentation IETF118 -
+   https://datatracker.ietf.org/meeting/118/materials/slides-118-panrg-
+   scion-deployment-experience-the-secure-swiss-finance-network-ssfn)*
+
+4.1.  Description and use case
+
+4.2.  Governance
+
+4.3.  Core Members - TRC signers
+
+4.4.  Issuing Members - issuers of AS certifications (may be the same as
+      Core Members)
+
+4.5.  Non-Core Members (is this the correct term - should we define a
+      better term?)
+
+4.6.  Coordination
+
+4.7.  Required contact information
+
+4.8.  Methods of Communication and Authentication requirements
+
+4.9.  ISD Policy Development & Maintenance
+
+4.10.  Assignment and registration of ISD numbers
+
+4.11.  Assignment and registration of SCION AS numbers
+
+4.12.  Trust Root Configuration
+
+   *  TRC signing
+
+   *  TRC distribution & installation
+
+   *  Maintaining cryptographic material
+
+   *  Certificate issuance
+
+4.13.  Security Incident Handling - this could go into the Security
+       section
+
+5.  Establishing and running a SCION network
+
+5.1.  Prerequisites - e.g.  AS number, running existing intra-domain
+      protocol if applicable
+
+   ## How to join an ISD ## Obtaining an SCION AS number and AS
+   certificate ## Setting up the Control Services (Beacon, Path and
+   Certificate servers) ## Availability & scalability ## Setting up
+   SCION border routers ## Customer site deployment (native, SCION-IP
+   gateway, SCION-enabled application) ## Configuring path (segment)
+   attributes/parameters (and how do customers select paths) - this
+   could be a separate section ## SCION & Network Address Translation ##
+   Software Change Management
+
+6.  Adding and removing networks from an Isolation Doman
+
+6.1.  Adding a new Core network
+
+   ## Removing an existing Core network ## Changes between existing Core
+   networks ## Adding a new non-Core network ## Removing an existing
+   non-Core network ## Changes between Core network and non-core network
+
+7.  Connecting to other Isolation Domains
+
+   *There doesn't seem to be much/any documentation on what needs to be
+   done to set-up inter-ISD communication, or how AS ‘peering’ works
+   across different ISDs.*
+
+   *  Inter-ISD Governance (is this applicable?)
+
+   *  Inter-ISD Policy Development & Maintenance
+
+   *  Inter-ISD Path selection
+
+8.  SCION-IP Gateway Deployment
+
+   *Is this section needed for this Internet Draft?  Could it go in the
+   ‘Adding and removing networks from an Isolation Domain’ section?*
+
+9.  End Host Deployment
+
+   *Is this section needed for this Internet Draft?  Could it go in the
+   ‘Adding and removing networks from an Isolation Domain’ section?*
+
+10.  Performance Monitoring
+
+   *This is outlined in the 'Best Practices for SCION ISD Operations but
+   is this strictly needed for an Internet Draft?  Most/all networks
+   should be monitored as a matter of good operational practice, and
+   unless SCION networks need to meet stated parameters, is this section
+   actually required?*
+
+11.  Security Considerations
+
+   TODO Security
+
+12.  IANA Considerations
+
+   This document has no IANA actions.
+
+13.  Normative References
+
+   [I-D.scion-cp]
+              de Kater, C., Rustignoli, N., and S. Hitz, "SCION Control
+              Plane", 2023, <https://datatracker.ietf.org/doc/draft-
+              dekater-scion-controlplane/>.
+
+   [I-D.scion-cppki]
+              de Kater, C., Rustignoli, N., and S. Hitz, "SCION Control-
+              Plane PKI", 2023, <https://datatracker.ietf.org/doc/draft-
+              dekater-scion-pki/>.
+
+   [I-D.scion-dataplane]
+              de Kater, C., Rustignoli, N., and S. Hitz, "SCION Data
+              Plane", 2023, <https://datatracker.ietf.org/doc/draft-
+              dekater-scion-dataplane/>.
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <https://www.rfc-editor.org/rfc/rfc2119>.
+
+   [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
+              2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
+              May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
+
+Acknowledgments
+
+   TODO acknowledge.
+
+Authors' Addresses
+
+   Kevin Meynell
+   SCION Association
+   Email: kme@scion.org
+
+
+   Nicola Rustignoli
+   SCION Association
+   Email: nic@scion.org
