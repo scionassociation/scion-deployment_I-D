@@ -30,6 +30,7 @@ author:
      email: nic@scion.org
 
 normative:
+  RFC9217:
   I-D.scion-cp:
     title: SCION Control Plane
     date: 2023
@@ -93,7 +94,11 @@ TODO Abstract here
 
 # Introduction
 
-TODO Introduction
+The goal of this draft is two-fold: it tries to document lessons learned in deploying SCION to some if its productive early adopters, and it tries to tries to answer questions 2.7 - Operating a Path-Aware Network, and 2.8 - Deploying a Path-Aware Network posed in {{RFC9217}}.
+
+**Note:** This is the very first version of the SCION deployment draft, and it merely contains a skeleton of potential topics to be further discussed in this draft. Any feedback is welcome and much appreciated. Thanks!
+
+* This draft assumes the reader is familiar with the overall core SCION specification, outlined in {{I-D.scion-dataplane}}, {{I-D.scion-cppki}}, {{I-D.scion-cp}}.
 
 
 # Conventions and Definitions
@@ -102,39 +107,107 @@ TODO Introduction
 
 # Deployment Models
 
-TODO Deployment Models
+## SCION Network - How to roll it out.
+
+## SCION-IP Gateway
+
+Introduction to IP in SCION tunneling for ecosystems. See S. Hitz IETF118 presentation - https://datatracker.ietf.org/meeting/118/materials/slides-118-panrg-operational-aspects-of-scion-00
+
+## SCION-enabled Applications/Native SCION Endpoint
+
+## Implications for the transport layer
+
+Address section 2.5 of {{RFC9217}}.
+
 
 # Establishing and running an Isolation Domain
 
-TODO ISD
+See F. Steinmann presentation IETF118 - https://datatracker.ietf.org/meeting/118/materials/slides-118-panrg-scion-deployment-experience-the-secure-swiss-finance-network-ssfn
+
+## Description and use case
+
+## Governance
+
+## Core Members - TRC signers
+
+## Issuing Members - issuers of AS certifications
+
+(may be the same as Core Members)
+
+## Non-Core Members
+
+## Coordination
+
+## Required contact information
+
+## Methods of Communication and Authentication requirements
+
+## ISD Policy Development & Maintenance
+
+## Assignment and registration of ISD numbers
+
+## Assignment and registration of SCION AS numbers
+
+## Trust Root Configuration
+* TRC signing
+* TRC distribution & installation
+* Maintaining cryptographic material
+* Certificate issuance
+
+
 
 # Establishing and running a SCION network
 
-TODO Running a SCION network
+## Prerequisites - e.g. AS number, running existing intra-domain protocol if applicable
 
-# Adding and removing networks from an Isolation Doman
+## How to join an ISD
 
-TODO Adding and removing network from ISDs
+## Obtaining a SCION AS number and AS certificate
+
+## Setting up the Control Services (Beacon, Path and Certificate servers)
+
+Also cover Availability & scalability of such services.
+
+## Setting up SCION border routers
+
+
+## Configuring path (segment) attributes/parameters
+
+How do customers select paths?
+
+## SCION & Network Address Translation
+
+## Software Change Management
+
+# Adding and removing networks from an Isolation Domain
+
+## Adding a new Core network
+
+## Removing an existing Core network
+
+## Changes between existing Core networks
+
+## Adding a new non-Core network
+
+## Removing an existing non-Core network
+
+## Changes between Core network and non-core network
 
 # Connecting to other Isolation Domains
 
-TODO Connecting to other ISDs
+## Inter-ISD Governance
 
-# SCION-IP Gateway Deployment
+* Inter-ISD Governance (is this applicable?)
+* Inter-ISD Policy Development & Maintenance
+* Inter-ISD Path selection
 
-TODO SCION-IP Gateway Deployment
-
-# End Host Deployment
-
-TODO End Host Deployment
 
 # Performance Monitoring
 
-TODO Perforamcne Performance
 
 # Security Considerations
 
-TODO Security
+## Security Incident Handling
 
 
 # IANA Considerations
