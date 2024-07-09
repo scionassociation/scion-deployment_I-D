@@ -1,0 +1,245 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2024-07-09T00:01:26.938524+00:00",
+  "repo": "scionassociation/scion-deployment_I-D",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOMRYld86OtC4O",
+      "title": "Discuss managing the number of ISDs and core ASes",
+      "url": "https://github.com/scionassociation/scion-deployment_I-D/issues/1",
+      "state": "OPEN",
+      "author": "nicorusti",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "Following discussion in https://github.com/scionassociation/scion-cp_I-D/pull/42:  \r\n\r\n> `The ideal topology for SCION is to keep the inter-ISD core network to a moderate size, to benefit from the divide-and-conquer partitioning of ASes into ISDs and the efficiency of the intra-ISD beaconing.`\r\n> What is done to ensure this? What happens if the size is not moderate? What is \"moderate\"?\r\n\r\n\r\nAlso, we got this feedback [here](https://github.com/scionassociation/scion-cp_I-D/issues/6) : \r\n\r\n > Explain why why 4030 ISDs is enough for public addressing.\r\n\r\nwe should  discuss how to keep the size inter-ISD network, the number of core ASes and ISDs moderate. \r\n",
+      "createdAt": "2024-07-07T18:49:16Z",
+      "updatedAt": "2024-07-07T18:49:16Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
+  "pulls": [
+    {
+      "number": 2,
+      "id": "PR_kwDOMRYld850qoTH",
+      "title": "fix branch metadata & add other SCION IDs as normative references",
+      "url": "https://github.com/scionassociation/scion-deployment_I-D/pull/2",
+      "state": "MERGED",
+      "author": "nicorusti",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-07-08T09:11:19Z",
+      "updatedAt": "2024-07-08T09:12:09Z",
+      "baseRepository": "scionassociation/scion-deployment_I-D",
+      "baseRefName": "main",
+      "baseRefOid": "7b5e17ee0c5a72faa782878516b10fdd336f6418",
+      "headRepository": "scionassociation/scion-deployment_I-D",
+      "headRefName": "metadata",
+      "headRefOid": "b5bdcf828e04cc83d60920bae12ab22a84957fea",
+      "closedAt": "2024-07-08T09:12:06Z",
+      "mergedAt": "2024-07-08T09:12:06Z",
+      "mergedBy": "nicorusti",
+      "mergeCommit": {
+        "oid": "6e33e48a0caafb870a4c56071e1b2c33c05038a2"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 3,
+      "id": "PR_kwDOMRYld850tB9_",
+      "title": "Section descriptions",
+      "url": "https://github.com/scionassociation/scion-deployment_I-D/pull/3",
+      "state": "MERGED",
+      "author": "knmeynell",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Added initial content.",
+      "createdAt": "2024-07-08T14:22:24Z",
+      "updatedAt": "2024-07-08T18:33:42Z",
+      "baseRepository": "scionassociation/scion-deployment_I-D",
+      "baseRefName": "main",
+      "baseRefOid": "6e33e48a0caafb870a4c56071e1b2c33c05038a2",
+      "headRepository": "scionassociation/scion-deployment_I-D",
+      "headRefName": "Section_Descriptions",
+      "headRefOid": "02f61d0989cf6ab074e1302de65f4bd3ca03bd4a",
+      "closedAt": "2024-07-08T18:33:35Z",
+      "mergedAt": "2024-07-08T18:33:34Z",
+      "mergedBy": "knmeynell",
+      "mergeCommit": {
+        "oid": "0c2d3f9228338b52f3570a59e999d0d121056bfe"
+      },
+      "comments": [
+        {
+          "author": "knmeynell",
+          "authorAssociation": "COLLABORATOR",
+          "body": "The outline looks fairly complete now. We can start filling in the details from this.",
+          "createdAt": "2024-07-08T18:24:31Z",
+          "updatedAt": "2024-07-08T18:24:31Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOMRYld86A-0wj",
+          "commit": {
+            "abbreviatedOid": "02f61d0"
+          },
+          "author": "nicorusti",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "This is a first skeleton, it needs a tiny bit more text to better explain what we want to achieve with the discussion. \r\nWe might submit it now, but we'll have to update it with a bit more content soonish",
+          "createdAt": "2024-07-08T17:26:40Z",
+          "updatedAt": "2024-07-08T17:26:40Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOMRYld86A_Piz",
+          "commit": {
+            "abbreviatedOid": "02f61d0"
+          },
+          "author": "knmeynell",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "Okay",
+          "createdAt": "2024-07-08T18:23:13Z",
+          "updatedAt": "2024-07-08T18:23:13Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOMRYld86A_Qsm",
+          "commit": {
+            "abbreviatedOid": "02f61d0"
+          },
+          "author": "knmeynell",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "Okay",
+          "createdAt": "2024-07-08T18:26:06Z",
+          "updatedAt": "2024-07-08T18:26:06Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOMRYld86A_T28",
+          "commit": {
+            "abbreviatedOid": "02f61d0"
+          },
+          "author": "nicorusti",
+          "authorAssociation": "MEMBER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-07-08T18:33:31Z",
+          "updatedAt": "2024-07-08T18:33:31Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "id": "PR_kwDOMRYld850u3tE",
+      "title": "dummy change",
+      "url": "https://github.com/scionassociation/scion-deployment_I-D/pull/4",
+      "state": "MERGED",
+      "author": "nicorusti",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-07-08T18:54:55Z",
+      "updatedAt": "2024-07-08T18:55:11Z",
+      "baseRepository": "scionassociation/scion-deployment_I-D",
+      "baseRefName": "main",
+      "baseRefOid": "0c2d3f9228338b52f3570a59e999d0d121056bfe",
+      "headRepository": "scionassociation/scion-deployment_I-D",
+      "headRefName": "Section_Descriptions",
+      "headRefOid": "3a4a974d282cf5bda56027293bf90988df9f1ca3",
+      "closedAt": "2024-07-08T18:55:11Z",
+      "mergedAt": "2024-07-08T18:55:11Z",
+      "mergedBy": "nicorusti",
+      "mergeCommit": {
+        "oid": "f3dddb2a9bd9d963f436e4f003df9765c7e4491f"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 5,
+      "id": "PR_kwDOMRYld850vGiv",
+      "title": "edit metadata",
+      "url": "https://github.com/scionassociation/scion-deployment_I-D/pull/5",
+      "state": "MERGED",
+      "author": "nicorusti",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-07-08T19:28:23Z",
+      "updatedAt": "2024-07-08T19:28:41Z",
+      "baseRepository": "scionassociation/scion-deployment_I-D",
+      "baseRefName": "main",
+      "baseRefOid": "f3dddb2a9bd9d963f436e4f003df9765c7e4491f",
+      "headRepository": "scionassociation/scion-deployment_I-D",
+      "headRefName": "Section_Descriptions",
+      "headRefOid": "580d29e68c71ae8a78397e72e6c91b98262734cb",
+      "closedAt": "2024-07-08T19:28:41Z",
+      "mergedAt": "2024-07-08T19:28:41Z",
+      "mergedBy": "nicorusti",
+      "mergeCommit": {
+        "oid": "3ac9c5cc16f8b3800f45f21a1201b43f3e51dd7a"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
+}
