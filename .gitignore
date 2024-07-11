@@ -17,6 +17,7 @@
 /versioned/
 Gemfile.lock
 archive.json
+draft-meynell-panrg-scion-deployment.xml
 draft-meynell-scion-deployment.xml
 package-lock.json
 report.xml
