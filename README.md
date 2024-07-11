@@ -2,10 +2,10 @@
 
 This is the working area for the individual Internet-Draft, "SCION Deployment Issues".
 
-* [Editor's Copy](https://scionassociation.github.io/scion-deployment_I-D/#go.draft-meynell-scion-deployment.html)
-* [Datatracker Page](https://datatracker.ietf.org/doc/draft-meynell-scion-deployment)
-* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-meynell-scion-deployment)
-* [Compare Editor's Copy to Individual Draft](https://scionassociation.github.io/scion-deployment_I-D/#go.draft-meynell-scion-deployment.diff)
+* [Editor's Copy](https://scionassociation.github.io/scion-deployment_I-D/#go.draft-meynell-panrg-scion-deployment.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-meynell-panrg-scion-deployment)
+* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-meynell-panrg-scion-deployment)
+* [Compare Editor's Copy to Individual Draft](https://scionassociation.github.io/scion-deployment_I-D/#go.draft-meynell-panrg-scion-deployment.diff)
 
 
 ## Contributing
