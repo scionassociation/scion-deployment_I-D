@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-23T00:01:35.269862+00:00",
+  "timestamp": "2024-07-25T00:01:24.129458+00:00",
   "repo": "scionassociation/scion-deployment_I-D",
   "labels": [
     {
@@ -63,6 +63,22 @@
       "body": "Following discussion in https://github.com/scionassociation/scion-cp_I-D/pull/42:  \r\n\r\n> `The ideal topology for SCION is to keep the inter-ISD core network to a moderate size, to benefit from the divide-and-conquer partitioning of ASes into ISDs and the efficiency of the intra-ISD beaconing.`\r\n> What is done to ensure this? What happens if the size is not moderate? What is \"moderate\"?\r\n\r\n\r\nAlso, we got this feedback [here](https://github.com/scionassociation/scion-cp_I-D/issues/6) : \r\n\r\n > Explain why why 4030 ISDs is enough for public addressing.\r\n\r\nwe should  discuss how to keep the size inter-ISD network, the number of core ASes and ISDs moderate. \r\n",
       "createdAt": "2024-07-07T18:49:16Z",
       "updatedAt": "2024-07-07T18:49:16Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 6,
+      "id": "I_kwDOMRYld86Qvcwi",
+      "title": "Discuss impact of relevant RFCs",
+      "url": "https://github.com/scionassociation/scion-deployment_I-D/issues/6",
+      "state": "OPEN",
+      "author": "nicorusti",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "- [RFC8170](https://www.rfc-editor.org/rfc/rfc8170.html)  Planning for Protocol Adoption and Subsequent Transitions\r\n- [RFC9049](https://datatracker.ietf.org/doc/rfc9049/) Path Aware Networking: Obstacles to Deployment (A Bestiary of Roads Not Taken)\r\n- [RFC5218](https://datatracker.ietf.org/doc/rfc5218/) What makes a successful protocol?\r\n",
+      "createdAt": "2024-07-24T19:51:34Z",
+      "updatedAt": "2024-07-24T19:56:18Z",
       "closedAt": null,
       "comments": []
     }
