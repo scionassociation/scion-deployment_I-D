@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-01-30T00:01:28.343897+00:00",
+  "timestamp": "2025-02-06T00:01:35.007642+00:00",
   "repo": "scionassociation/scion-deployment_I-D",
   "labels": [
     {
@@ -253,6 +253,34 @@
       "mergedBy": "nicorusti",
       "mergeCommit": {
         "oid": "3ac9c5cc16f8b3800f45f21a1201b43f3e51dd7a"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 7,
+      "id": "PR_kwDOMRYld86J9KP_",
+      "title": "Update actions",
+      "url": "https://github.com/scionassociation/scion-deployment_I-D/pull/7",
+      "state": "MERGED",
+      "author": "nicorusti",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-02-04T08:41:39Z",
+      "updatedAt": "2025-02-04T08:41:54Z",
+      "baseRepository": "scionassociation/scion-deployment_I-D",
+      "baseRefName": "main",
+      "baseRefOid": "8c6101c39bba30e261322173748990c1bdc9628f",
+      "headRepository": "scionassociation/scion-deployment_I-D",
+      "headRefName": "update-actions",
+      "headRefOid": "b6238bc22f7a8ddcc6d1594c396c69ff9476ba50",
+      "closedAt": "2025-02-04T08:41:49Z",
+      "mergedAt": "2025-02-04T08:41:49Z",
+      "mergedBy": "nicorusti",
+      "mergeCommit": {
+        "oid": "7b2e5f0738fe26a759fd0b2280784c568086e01f"
       },
       "comments": [],
       "reviews": []
